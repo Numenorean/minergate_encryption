@@ -15,8 +15,8 @@ var n = 0
 
 func hashPassword(password []byte) (string, error) {
 	hashedPassword, err := myBcrypt.GenerateFromPassword(password, myBcrypt.DefaultCost, salt)
-    if err != nil {
-        return "", err
+    	if err != nil {
+        	return "", err
 		
     }
     return string(hashedPassword), nil
